@@ -4,6 +4,7 @@ import pickle
 import numpy as np
 from typing import Optional
 from data_prep import get_vocabulary, get_vocab2idx
+from training_utils import generate_training_data, get_softmax_loss_and_gradients, get_negative_sampling_loss_and_gradients
 
 class Word2Vec:
     def __init__(
