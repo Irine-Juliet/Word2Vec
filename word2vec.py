@@ -3,9 +3,7 @@ import pathlib
 import pickle
 import numpy as np
 from typing import Optional
-from data_preparation import get_vocabulary, get_vocab2idx
-from training_utils import generate_training_data, get_softmax_loss_and_gradients, get_negative_sampling_loss_and_gradients,load_stopwords, print_nearest_neighbors
-from word2vec_model import Word2Vec  
+from data_prep import get_vocabulary, get_vocab2idx
 
 class Word2Vec:
     def __init__(
